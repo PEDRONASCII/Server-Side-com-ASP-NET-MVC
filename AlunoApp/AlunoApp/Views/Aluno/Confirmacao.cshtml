@@ -1,0 +1,13 @@
+@model Server_Side_com_ASP_NET_MVC.Models.Aluno
+
+<div style="background-color:#d4edda; padding:20px; border-radius:8px; width:400px;">
+    <h2 style="color:#155724;">✅ Aluno cadastrado com sucesso!</h2>
+    <p><strong>Nome:</strong> @Model.Nome</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>RA:</strong> @Model.RA</p>
+    <p><strong>Curso:</strong> @Model.Curso</p>
+    <p><strong>Data de Nascimento:</strong> @Model.DataNascimento?.ToString("dd/MM/yyyy")</p>
+</div>
+
+<br />
+<a href="/Aluno/Cadastrar"><button style="padding:10px 20px; background-color:#007bff; color:white; border:none; border-radius:4px; cursor:pointer;">Cadastrar outro</button></a>
